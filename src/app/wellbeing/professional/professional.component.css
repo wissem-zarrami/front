@@ -1,0 +1,120 @@
+/* professional.component.css */
+
+.container {
+    padding: 20px;
+    margin-top: 100px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .psychologist-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+ 
+  
+  .psychologist-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  /* professional.component.css */
+
+.psychologist-item {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Utiliser un modèle de boîte flexible */
+    flex-direction: column; /* Afficher les éléments enfants en colonne */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+  }
+  
+  .profile-image {
+    width: 150px; /* Assurez-vous que la largeur et la hauteur sont égales */
+    height: 150px; /* Assurez-vous que la largeur et la hauteur sont égales */
+    overflow: hidden;
+    border-radius: 50%; /* Cadre circulaire */
+    display: flex; /* Utiliser un modèle de boîte flexible */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+  }
+  
+  .profile-image img {
+    width: auto;
+    height: auto;
+    max-width: 100%; /* Assurez-vous que l'image reste dans les limites du cercle */
+    max-height: 100%; /* Assurez-vous que l'image reste dans les limites du cercle */
+    object-fit: cover;
+    border-radius: 50%; /* Cette ligne est facultative, elle garantit que l'image est également un cercle */
+  }
+  
+  .user-details {
+    padding: 10px;
+  }
+  
+  .user-details h3 {
+    margin: 0;
+  }
+  
+  .diploma-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .enlarged-image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .enlarged-image-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 4px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+.buttons button:first-child {
+    margin-right: 10px; /* Ajoute une marge à droite uniquement au premier bouton */
+}
+
+
+.btn {
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: green;
+    color: white;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+}
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-70%);
+}

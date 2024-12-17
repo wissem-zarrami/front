@@ -1,0 +1,112 @@
+<!-- SIDEBAR -->...
+<head>
+  <!-- Boxicons -->
+   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+ </head>
+ ...
+<section id="sidebar" [ngClass]="status ? 'hide' : ''">
+    <a href="home" class="brand">
+      <i class='bx bxs-smile'></i>
+      <span class="text">vita</span>
+    </a>
+    <ul class="side-menu top">
+      <li class="active">
+        <a href="#">
+          <i class='bx bxs-dashboard' ></i>
+          <span class="text">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="/store">
+          <i class='bx bxs-shopping-bag-alt' ></i>
+          <span class="text">My Store</span>
+        </a>
+      </li>
+
+      <li> <!--class="active"-->
+        <a [routerLink]="['/ALL']">
+          <i class='bx bxs-doughnut-chart' ></i>
+          <span class="text">All Users</span>
+        </a>
+      </li>
+
+      
+      <li>
+        <a [routerLink]="['/store-backend-tableviewer/product']">
+          <i class='bx bxs-doughnut-chart' ></i>
+          <span class="text">Store products</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/store-backend-tableviewer/mark']">
+          <i class='bx bxs-doughnut-chart' ></i>
+          <span class="text">Product marks</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/store-backend-tableviewer/review']">
+          <i class='bx bxs-doughnut-chart' ></i>
+          <span class="text">Product reviews</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/store-backend-tableviewer/store']">
+          <i class='bx bxs-doughnut-chart' ></i>
+          <span class="text">Physical Stores</span>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/store-backend-tableviewer/shipment-user']">
+          <i class='bx bxs-doughnut-chart' ></i>
+          <span class="text">Product Shipment users</span>
+        </a>
+      </li>
+
+
+
+      <li>
+        <a href="#">
+          <i class='bx bxs-message-dots' ></i>
+          <span class="text">Message</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-group' ></i>
+          <span class="text">Team</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="side-menu">
+      <li>
+        <a href="#">
+          <i class='bx bxs-cog' ></i>
+          <span class="text">Settings</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="logout" (click)="logout()">
+          <i class='bx bxs-log-out-circle'></i>
+          <span class="text">Logout</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!-- SIDEBAR -->
+  
+  
+  
+  <!-- CONTENT -->
+  <section id="content">
+    <!-- NAVBAR -->
+
+    <!-- NAVBAR -->
+  
+    <!-- MAIN -->
+    <main>
+      <iframe title="Vitaverse" width="1540" height="941.25" src="https://app.powerbi.com/reportEmbed?reportId=a8cf77e5-59d0-4742-b659-924270dd8e00&autoAuth=true&ctid=604f1a96-cbe8-43f8-abbf-f8eaf5d85730" frameborder="0" allowFullScreen="true"></iframe>
+
+    </main>
+    <!-- MAIN -->
+  </section>
+  <!-- CONTENT -->
